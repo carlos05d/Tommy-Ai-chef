@@ -4,48 +4,53 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { Navbar } from "@/components/navbar"
 import { RecipeCard } from "@/components/recipe-card"
-
+import shrimp from "@/assets/garlic-shrimp.jpg"
+import curry from "@/assets/chickpea-curry.jpg"
+import pizza from "@/assets/pizza.jpg"
+import toast from "@/assets/avocado-toast.jpg"
+import stirfry from "@/assets/beef-stirfry.jpg"
+import cookies from "@/assets/cookies.jpg"
 // Sample recipe data
 const popularRecipes = [
   {
     id: 1,
     title: "Garlic Butter Shrimp Pasta",
-    image: "/placeholder.svg?height=200&width=300",
+    image: shrimp,
     time: "25 mins",
     difficulty: "Easy",
   },
   {
     id: 2,
     title: "Vegetarian Chickpea Curry",
-    image: "/placeholder.svg?height=200&width=300",
+    image: curry,
     time: "35 mins",
     difficulty: "Medium",
   },
   {
     id: 3,
     title: "Classic Margherita Pizza",
-    image: "/placeholder.svg?height=200&width=300",
+    image: pizza,
     time: "45 mins",
     difficulty: "Medium",
   },
   {
     id: 4,
     title: "Avocado & Egg Toast",
-    image: "/placeholder.svg?height=200&width=300",
+    image: toast,
     time: "10 mins",
     difficulty: "Easy",
   },
   {
     id: 5,
     title: "Beef Stir Fry with Vegetables",
-    image: "/placeholder.svg?height=200&width=300",
+    image: stirfry,
     time: "30 mins",
     difficulty: "Medium",
   },
   {
     id: 6,
     title: "Chocolate Chip Cookies",
-    image: "/placeholder.svg?height=200&width=300",
+    image: cookies,
     time: "25 mins",
     difficulty: "Easy",
   },
